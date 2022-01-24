@@ -66,7 +66,15 @@ increment(increment(3))
 # -> print cannot be used later. only return can.
 
 # TODO: define a function named is_weekend. This function should accept a string and return true if the string is either saturday or sunday, false otherwise.
-is_weekend = 
+is_weekday = 'monday'
+is_weekday = 'tuesday'
+is_weekday = 'wednesday'
+is_weekday = 'thursday'
+is_weekday = 'friday'
+is_weekday = 'saturday'
+is_weekend =
+is_weekday = 
+
 user_input = input('Please enter a weekday: ')
 if is_weekend(user_input):
     print('It\'s the weekend.')
@@ -136,13 +144,16 @@ sayhello('Jerry')
 sayhello(name='Jerry')
 
 
-################    Stopping point 1/20/22    ###############
+############################ Stopping point 1/20/22 ############################
 
 
 ## Docstrings ##
 def sayhello(name="Innis"):
     "Provides a friendly greeting."
     return f"Hello, {name}!"
+
+sayhello()
+
 
 # Aside: built-in help with help() (or ? in ipython)
 
